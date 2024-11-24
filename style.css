@@ -405,3 +405,14 @@ th {
 .icons1 a i{
     color:#028674;
 }
+
+/* footer */
+.footer{
+    margin: 0 auto ;
+    width: 500px;
+    padding: 10px 0;
+    font-family: 'Segoe UI', sans-serif;
+    float: left;
+    display: flex;
+    margin-left: 425px;
+}
