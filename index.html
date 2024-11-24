@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diandra Fauzi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="my-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" >
+        <img src="img/my-logo.png" alt="my-logo" >
+        <nav>
+            <a href="#Home">Home</a>
+            <a href="#showcase">Showcase</a>
+            <a href="#Service">Service</a>
+            <a href="#about-me">About</a>
+        </nav>
+    </header>
+
+                    <!--Home Content-->
+
+    <section class="home" id="Home">
+        
+        <div class="home-content" style="margin-top: 60px;">
+            <p>Welcome To My Page</p>
+            <h1>Hi I am Diandra Fauzi</h1>
+            <h2><span class="multiple-text"></span></h2>
+            <span class="divider"></span>
+            <br>
+            <p style="font-size: large;">“Sebagai seorang pelajar, saya sering mengikuti kursus online,<br>
+                membaca dokumentasi, dan mencoba membangun proyek-proyek <br>
+                kecil untuk memperkuat kemampuan saya.Dengan tekad dan dedikasi yang kuat, <br>
+                saya siap tumbuh menjadi seorang web developer yang handal di masa depan.”</p>
+            <a href="#" class="c">More About Me</a>
+            <div class="icons">
+                <a href="https://www.instagram.com/drfzrmdhn/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/DiandraFauziR"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <img src="img/gambar.png" alt="img" width="350" height="350" class="image">
+
+                    <!--Showcase-->
+
+        <section class="showcase" id="showcase">
+            <h1>Showcase</h1>
+            <span class="divider1"></span>
+            <div>
+                <div class="image-grid" >
+                    <div class="image-card" onclick="openModal('img/1.jpg')">
+                        <img src="img/1.jpg" alt="Image 1">
+                    </div>
+                    <div class="image-card" onclick="openModal('img/3.jpg')">
+                        <img src="img/3.jpg" alt="Image 1">
+                    </div>
+                    <div class="image-car" onclick="openModal('img/Cuplikan layar 2024-11-22 222130.png')">
+                        <img src="img/Cuplikan layar 2024-11-22 222130.png" alt="Image 1">
+                    </div>
+                    <span class="sc">
+                        <p> Saya telah menyelesaikan beberapa proyek kecil seperti website portofolio pribadi, website Perpustakaan, 
+                            design kaos, design mug, dan poster. yang semuanya dirancang untuk mengasah keterampilan saya dalam HTML, CSS, JavaScript, dan Design.</p>
+                            <a href="#" class="a">View all</a>
+                    </span>
+                </div>
+                <div class="image-grid">
+                    <div class="image-car" onclick="openModal('img/design mug.jpg')">
+                        <img src="img/design mug.jpg" alt="Image 1">
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div id="modal" class="modal" onclick="closeModal()">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage" alt="Modal Image">
+            </div>
+
+        </section>
+
+                    <!--Service-->
+
+        <section class="Service" id="Service">
+            <h1>Services</h1>
+            <span class="divider2"></span>
+                <p>Saya menawarkan layanan lengkap untuk membantu mewujudkan kebutuhan digital Anda, mulai dari web development, UI/UX design, hingga graphic design.</p>
+            <span style="display: flex; margin-right: 65px; ">
+                <div class="srv">
+                    <img src="img/ui_7858975.png" alt="ui/ux">
+                    <h2>UI/UX</h2>
+                    <p>saya fokus menciptakan pengalaman pengguna yang intuitif dan estetika desain yang menarik, memastikan website Anda mudah digunakan dan nyaman diakses.
+                    </p>
+                </div>
+                <div class="srv">
+                    <img src="img/ds.png" alt="ui/ux">
+                    <h2>GRAPHICS</h2>
+                    <p>saya dapat mendukung Anda dengan elemen visual berkualitas seperti logo, banner, dan ilustrasi yang memperkuat identitas brand Anda.
+                    </p>
+                </div>
+                <div class="srv">
+                    <img src="img/dv.png" alt="ui/ux">
+                    <h2>DEVELOPMENT</h2>
+                    <p>saya dapat membangun website atau aplikasi web yang fungsional dan responsif. 
+                    </p>
+                </div>
+            </span>
+        </section>
+
+                <!-- About Me -->
+
+        <section class="about-me" id="about-me">
+            <div class="img"></div>
+            <div class="about-content">
+                <h1>About Me</h1>
+                <span class="divider3"></span>
+                <p>“Perkenalkan nama saya Diandra Fauzi Ramadhani, sering juga di panggil diandra, dian, dra dll. 
+                    Saya merupakan salah satu siswa dari SMKN 1 MAJA dari kelas 11 Rpl 1. 
+                    Asal saya dari Blok.Gunung Herang Landeuh Ds.Sadasari.”
+                </p>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>From</th>
+                    </tr>
+                    <tr>
+                        <td>Diandra Fauzi Ramadhani</td>
+                        <td>17 Years</td>
+                        <td>Indonesia</td>
+                    </tr>
+                </table>
+                <br>
+                <table style="width: 575px;">
+                    <tr>
+                        <th>Phone</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr>
+                        <td>+62 851 4218 6584</td>
+                        <td>diandrafauzir@gmail.com</td>   
+                    </tr>
+                </table>
+                <span class="divider4"></span>
+            <div class="icons1">
+                <a href="https://www.instagram.com/drfzrmdhn/"><i class="fa-brands fa-instagram" ></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/DiandraFauziR"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/drfzrmdhn?t=vL9rwwqIDHGjjEYZqTaaQg&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+        </section>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
