@@ -6,6 +6,7 @@
     <title>Diandra Fauzi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="my-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -26,47 +27,48 @@
         
         <div class="home-content" style="margin-top: 60px;">
             <p>Welcome To My Page</p>
-            <h1>Hi I am Diandra Fauzi</h1>
-            <h2><span class="multiple-text"></span></h2>
-            <span class="divider"></span>
+            <h1 data-aos="fade-right">Hi I am Diandra Fauzi</h1>
+            <h2 data-aos="fade-right"><span class="multiple-text"></span></h2>
+            <span class="divider" data-aos="fade-right"></span>
             <br>
             <p style="font-size: large;">“Sebagai seorang pelajar, saya sering mengikuti kursus online,<br>
                 membaca dokumentasi, dan mencoba membangun proyek-proyek <br>
                 kecil untuk memperkuat kemampuan saya.Dengan tekad dan dedikasi yang kuat, <br>
                 saya siap tumbuh menjadi seorang web developer yang handal di masa depan.”</p>
-            <a href="#" class="c">More About Me</a>
+            <a href="https://wa.link/0b3pxq" class="c">Contact</a>
             <div class="icons">
                 <a href="https://www.instagram.com/drfzrmdhn/"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://github.com/DiandraFauziR"><i class="fa-brands fa-github"></i></a>
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
-        <img src="img/gambar.png" alt="img" width="350" height="350" class="image">
+        <img src="img/gambar.png" alt="img" width="350" height="350" class="image" data-aos="fade-left">
 
                     <!--Showcase-->
 
         <section class="showcase" id="showcase">
-            <h1>Showcase</h1>
-            <span class="divider1"></span>
+            <h1 data-aos="zoom-in-up">Showcase</h1>
+            <span class="divider1" data-aos="zoom-in-up"></span>
             <div>
-                <div class="image-grid" >
-                    <div class="image-card" onclick="openModal('img/1.jpg')">
+                <div class="image-grid">
+                    <div class="image-card" data-aos="zoom-in" onclick="openModal('img/1.jpg')">
                         <img src="img/1.jpg" alt="Image 1">
                     </div>
-                    <div class="image-card" onclick="openModal('img/3.jpg')">
+                    <div class="image-card" data-aos="zoom-in" onclick="openModal('img/3.jpg')">
                         <img src="img/3.jpg" alt="Image 1">
                     </div>
-                    <div class="image-car" onclick="openModal('img/Cuplikan layar 2024-11-22 222130.png')">
+                    <div class="image-car" data-aos="zoom-in" onclick="openModal('img/Cuplikan layar 2024-11-22 222130.png')">
                         <img src="img/Cuplikan layar 2024-11-22 222130.png" alt="Image 1">
                     </div>
-                    <span class="sc">
+                    <span class="sc" data-aos="fade-up"
+                    data-aos-duration="1000">
                         <p> Saya telah menyelesaikan beberapa proyek kecil seperti website portofolio pribadi, website Perpustakaan, 
                             design kaos, design mug, dan poster. yang semuanya dirancang untuk mengasah keterampilan saya dalam HTML, CSS, JavaScript, dan Design.</p>
                             <a href="#" class="a">View all</a>
                     </span>
                 </div>
                 <div class="image-grid">
-                    <div class="image-car" onclick="openModal('img/design mug.jpg')">
+                    <div class="image-car" data-aos="zoom-in" onclick="openModal('img/design mug.jpg')">
                         <img src="img/design mug.jpg" alt="Image 1">
                     </div>
                 </div>
@@ -82,10 +84,10 @@
                     <!--Service-->
 
         <section class="Service" id="Service">
-            <h1>Services</h1>
-            <span class="divider2"></span>
-                <p>Saya menawarkan layanan lengkap untuk membantu mewujudkan kebutuhan digital Anda, mulai dari web development, UI/UX design, hingga graphic design.</p>
-            <span style="display: flex; margin-right: 65px; ">
+            <h1 data-aos="zoom-in-up">Services</h1>
+            <span class="divider2" data-aos="zoom-in-up"></span>
+                <p data-aos="zoom-in-up">Saya menawarkan layanan lengkap untuk membantu mewujudkan kebutuhan digital Anda, mulai dari web development, UI/UX design, hingga graphic design.</p>
+            <span style="display: flex; margin-right: 65px; " data-aos="fade-right">
                 <div class="srv">
                     <img src="img/ui_7858975.png" alt="ui/ux">
                     <h2>UI/UX</h2>
@@ -109,7 +111,9 @@
 
                 <!-- About Me -->
 
-        <section class="about-me" id="about-me">
+        <section class="about-me" id="about-me" data-aos="fade-right"
+                                                data-aos-offset="300"
+                                                data-aos-easing="ease-in-sine">
             <div class="img"></div>
             <div class="about-content">
                 <h1>About Me</h1>
@@ -156,7 +160,11 @@
         </section>
     </section>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
